@@ -3,8 +3,32 @@ $green: #68c5a8;
 $light-green: #97dfc9;
 $red: #f8a8b9;
 $light-grey: #e6e6e6;
+$white: white;
 
 //fonts
 $header: 'Damascus';
-$sub-heading: 'Menlo';
+$sub-heading: 'Roboto Mono';
 $p-text: 'STIXIntegralsUpSm';
+
+.navbar-ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  border: 1px solid black;
+  li {
+    font-family: $sub-heading;
+    margin-left: 20%;
+    padding: 20px 0px;
+  }
+}
+
+.banner {
+  color: $white;
+  background-color: $green;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $sub-heading;
+}

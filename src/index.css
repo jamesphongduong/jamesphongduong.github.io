@@ -1,0 +1,19 @@
+.navbar-ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  border: 1px solid black; }
+  .navbar-ul li {
+    font-family: "Roboto Mono";
+    margin-left: 20%;
+    padding: 20px 0px; }
+
+.banner {
+  color: white;
+  background-color: #68c5a8;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Mono"; }
