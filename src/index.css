@@ -16,9 +16,18 @@ li,
     margin-left: 20%;
     padding: 20px 0px; }
 
+.heading-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; }
+  .heading-container img {
+    margin-right: 20px; }
+
 .project-container {
+  margin: 20px 0px;
   background-color: #e6e6e6;
-  height: 400px; }
+  height: 400px;
+  width: calc(50% - 20px); }
   .project-container .project-label-container {
     position: relative;
     height: 100%; }
@@ -31,8 +40,9 @@ li,
 
 .button {
   padding: 20px;
-  width: 200px;
-  border: 1px solid black; }
+  margin: 20px 0px;
+  border: 1px solid black;
+  display: inline-block; }
 
 .banner {
   color: white;
@@ -80,3 +90,17 @@ li,
 .hvr-underline-from-center:active:before {
   left: 0;
   right: 0; }
+
+img {
+  height: 50px;
+  width: 50px; }
+
+.line {
+  border: thin solid #97dfc9;
+  width: 20px;
+  margin: 20px 0px; }
+
+.test {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }

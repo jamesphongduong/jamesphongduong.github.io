@@ -35,9 +35,27 @@ li,
   }
 }
 
+.heading-container {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  // flex-direction: row;
+  // border: 1px solid black;
+  margin-top: 20px;
+  img {
+    margin-right: 20px;
+    // border-right: 2px solid $light-green;
+  }
+  h2 {
+    // border-left: 1px solid purple;
+  }
+}
+
 .project-container {
+  margin: 20px 0px;
   background-color: $light-grey;
   height: 400px;
+  width: calc(50% - 20px);
   .project-label-container {
     position: relative;
     height: 100%;
@@ -53,8 +71,10 @@ li,
 
 .button {
   padding: $padding-button;
-  width: 200px;
+  // width: 200px;
+  margin: 20px 0px;
   border: 1px solid black;
+  display: inline-block;
 }
 
 .banner {
@@ -107,4 +127,21 @@ li,
 .hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+.line {
+  border: thin solid $light-green;
+  width: 20px;
+  margin: 20px 0px;
+}
+
+.test {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
