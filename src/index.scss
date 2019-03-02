@@ -11,7 +11,7 @@ $header: 'Monda';
 $sub-heading: 'Roboto Mono';
 $p-text: 'STIXIntegralsUpSm';
 
-$padding-button: 20px;
+$padding-button: 10px;
 
 h1,
 h4 {
@@ -52,29 +52,48 @@ li,
 }
 
 .project-container {
-  margin: 20px 0px;
+  margin: 20px 10px;
   background-color: $light-grey;
-  height: 400px;
-  width: calc(50% - 20px);
+  height: 200px;
+  // width: calc(33% - 20px);
   .project-label-container {
     position: relative;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      // border: 1px solid grey;
+      width: 50px;
+      height: 50px;
+      // padding: 30%;
+      // object-fit: contain;
+    }
     .project-label {
       position: absolute;
       bottom: 20px;
-      left: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      // bottom: 20px;
+      // left: 20px;
       background-color: $red;
       padding: $padding-button;
     }
   }
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .button {
   padding: $padding-button;
   // width: 200px;
   margin: 20px 0px;
-  border: 1px solid black;
+  border: 1px solid $red;
   display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 .banner {
@@ -111,9 +130,9 @@ li,
   z-index: -1;
   left: 51%;
   right: 51%;
-  bottom: 5px;
+  bottom: 10px;
   background: #f8a8b9;
-  height: 4px;
+  height: 3px;
   border-radius: 2px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -132,6 +151,7 @@ li,
 img {
   height: 50px;
   width: 50px;
+  margin-right: 20px;
 }
 
 .line {
@@ -141,7 +161,17 @@ img {
 }
 
 .test {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+}
+
+// .hidden {
+//   display: none;
+// }
+
+.content-container {
+  margin: 0px 10px;
 }

@@ -9,11 +9,11 @@ const ProjectPage = () => {
     <Container>
       <Heading src='/images/idea.svg' title='My Projects' />
       <div className='test'>
-        <Project name='project 1' url='#' />
-        <Project name='project 2' url='#' />
-        <Project name='project 2' url='#' />
+        <Project name='oneUp' src='/images/oneUp.png' />
+        <Project name='oneUp' src='/images/oneUp.png' />
+        <Project name='oneUp' src='/images/oneUp.png' />
       </div>
-      <Button text='View my Github' src='#' url='#' />
+      <Button text='View my Github' src='/images/github.svg' url='#' />
     </Container>
   );
 };
