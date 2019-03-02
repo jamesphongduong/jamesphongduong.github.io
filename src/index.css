@@ -4,7 +4,8 @@ h4 {
   color: white; }
 
 h2,
-li {
+li,
+.button {
   font-family: "Roboto Mono"; }
 
 .navbar-ul {
@@ -26,7 +27,12 @@ li {
       bottom: 20px;
       left: 20px;
       background-color: #f8a8b9;
-      padding: 20px 40px; }
+      padding: 20px; }
+
+.button {
+  padding: 20px;
+  width: 200px;
+  border: 1px solid black; }
 
 .banner {
   color: white;

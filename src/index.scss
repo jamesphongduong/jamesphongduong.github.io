@@ -11,6 +11,8 @@ $header: 'Monda';
 $sub-heading: 'Roboto Mono';
 $p-text: 'STIXIntegralsUpSm';
 
+$padding-button: 20px;
+
 h1,
 h4 {
   font-family: $sub-heading;
@@ -18,7 +20,8 @@ h4 {
 }
 
 h2,
-li {
+li,
+.button {
   font-family: $sub-heading;
 }
 
@@ -43,9 +46,15 @@ li {
       bottom: 20px;
       left: 20px;
       background-color: $red;
-      padding: 20px 40px;
+      padding: $padding-button;
     }
   }
+}
+
+.button {
+  padding: $padding-button;
+  width: 200px;
+  border: 1px solid black;
 }
 
 .banner {
