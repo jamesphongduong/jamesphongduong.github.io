@@ -1,12 +1,32 @@
+h1,
+h4 {
+  font-family: "Roboto Mono";
+  color: white; }
+
+h2,
+li {
+  font-family: "Roboto Mono"; }
+
 .navbar-ul {
   display: flex;
   list-style: none;
-  justify-content: flex-end;
-  border: 1px solid black; }
+  justify-content: flex-end; }
   .navbar-ul li {
-    font-family: "Roboto Mono";
     margin-left: 20%;
     padding: 20px 0px; }
+
+.project-container {
+  background-color: #e6e6e6;
+  height: 400px; }
+  .project-container .project-label-container {
+    position: relative;
+    height: 100%; }
+    .project-container .project-label-container .project-label {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background-color: #f8a8b9;
+      padding: 20px 40px; }
 
 .banner {
   color: white;
@@ -15,5 +35,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-family: "Roboto Mono"; }
+  justify-content: center; }
+  .banner h1 {
+    font-family: "Monda";
+    font-size: 36px; }
+  .banner h3 {
+    font-family: "Roboto Mono"; }
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden; }
+
+.hvr-underline-from-center:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 5px;
+  background: #f8a8b9;
+  height: 4px;
+  border-radius: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0; }

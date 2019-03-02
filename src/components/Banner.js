@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className='banner'>
       <h1> James Duong </h1>
-      <p> web developer </p>
+      <h3> web developer </h3>
     </div>
   );
 };

@@ -5,8 +5,13 @@ const NavBar = () => {
   return (
     <Container>
       <ul className='navbar-ul'>
-        <li> projects </li>
-        <li> me </li>
+        <li className='hvr-underline-from-center'>
+          <a href='#'> projects </a>
+        </li>
+
+        <li className='hvr-underline-from-center'>
+          <a href='#'>me </a>
+        </li>
       </ul>
     </Container>
   );
