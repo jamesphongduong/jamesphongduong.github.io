@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@iconfu/svg-inject": "^1.2.2",
     "jquery": "^3.3.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",

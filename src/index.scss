@@ -29,8 +29,11 @@ li,
 ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-left: 0;
 }
 li {
+  // border: 1px solid black;
   display: flex;
   align-items: center;
 }
@@ -125,6 +128,30 @@ li {
   }
   h3 {
     font-family: $sub-heading;
+  }
+  ul {
+    // border: 1px solid purple;
+  }
+  li {
+    color: white;
+    // padding: 20px;
+    // border: 1px solid white;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    a {
+      color: white;
+    }
+
+    i {
+      box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0) !important;
+      &:hover {
+        box-shadow: 0 0 0 0.1em rgba(255, 255, 255, 1) !important;
+      }
+    }
+    #email:hover {
+      cursor: alias;
+    }
   }
 }
 

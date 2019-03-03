@@ -33,7 +33,7 @@ const MePage = () => {
         <Card src='/images/git.svg' text='Git' />
         <Card src='/images/s3.svg' text='Amazon Storage Service' />
       </ul>
-      <Button
+      {/* <Button
         text='Connect with me'
         src='/images/github.svg'
         url='https://github.com/jamesphongduong'
@@ -43,7 +43,7 @@ const MePage = () => {
         text='Email me'
         src='/images/github.svg'
         url='https://github.com/jamesphongduong'
-      />
+      /> */}
     </Container>
   );
 };
