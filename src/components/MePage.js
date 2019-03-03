@@ -1,13 +1,10 @@
 import React from 'react';
-import { Container } from 'semantic-ui-react';
 import Card from './Card';
-import Project from './Project';
-import Button from './Button';
 import Heading from './Heading';
 
 const MePage = () => {
   return (
-    <Container id='me'>
+    <div id='me'>
       <Heading src='/images/nerd.svg' title='Me' />
       <p>
         I enjoy the process of designing and building websites. It’s a great
@@ -43,7 +40,7 @@ const MePage = () => {
         src='/images/github.svg'
         url='https://github.com/jamesphongduong'
       /> */}
-    </Container>
+    </div>
   );
 };
 

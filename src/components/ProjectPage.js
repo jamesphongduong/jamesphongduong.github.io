@@ -1,12 +1,10 @@
 import React from 'react';
-import { Container } from 'semantic-ui-react';
 import Project from './Project';
-import Button from './Button';
 import Heading from './Heading';
 
 const ProjectPage = () => {
   return (
-    <Container id='projects'>
+    <div id='projects'>
       <Heading src='/images/idea.svg' title='My Projects' />
       <div className='test'>
         <Project
@@ -16,7 +14,7 @@ const ProjectPage = () => {
           url='http://1up-app.s3-website-ap-southeast-2.amazonaws.com'
         />
       </div>
-    </Container>
+    </div>
   );
 };
 

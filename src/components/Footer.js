@@ -1,12 +1,12 @@
 import React from 'react';
-import { Container, Icon } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 
 const Footer = () => {
   return (
-    <Container>
+    <div>
       {' '}
       <Icon name='copyright outline' /> Copyright 2019 | James Duong
-    </Container>
+    </div>
   );
 };
 
