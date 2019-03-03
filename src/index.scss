@@ -5,6 +5,7 @@ $red: #f28098;
 $light-grey: #e6e6e6;
 $white: white;
 $black: black;
+$padding-button: 5px;
 
 //fonts
 $header: 'Monda';
@@ -37,6 +38,12 @@ ul {
 li {
   display: flex;
   align-items: center;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
 }
 
 .navbar-ul {
