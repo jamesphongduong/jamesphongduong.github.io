@@ -11,8 +11,6 @@ $header: 'Monda';
 $sub-heading: 'Roboto Mono';
 $p-text: 'STIXIntegralsUpSm';
 
-$padding-button: 10px;
-
 * {
   scroll-behavior: smooth;
 }
@@ -37,7 +35,6 @@ ul {
   padding-left: 0;
 }
 li {
-  // border: 1px solid black;
   display: flex;
   align-items: center;
 }
@@ -58,41 +55,24 @@ li {
 .heading-container {
   margin: 40px 0px;
   display: flex;
-  // justify-content: center;
   align-items: center;
-  // flex-direction: row;
-  // border: 1px solid black;
-  img {
-    margin-right: 20px;
-    // border-right: 2px solid $light-green;
-  }
-  h2 {
-    // border-left: 1px solid purple;
-  }
 }
 
 .project-container {
-  // margin: 20px 10px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('/images/oneUp-bg.png');
-  // background: url('/images/oneUp-bg.png');
   background-size: cover;
-  // background-color: $light-grey;
   height: 200px;
-  // width: calc(33% - 20px);
   .project-label-container {
     position: relative;
     height: 100%;
     img {
-      // border: 1px solid grey;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 30px;
       height: 30px;
-      // padding: 30%;
-      // object-fit: contain;
     }
     .project-label {
       position: absolute;
@@ -106,20 +86,6 @@ li {
       }
     }
   }
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.button {
-  padding: $padding-button;
-  // width: 200px;
-  margin: 20px 0px;
-  border: 2px solid $red;
-  display: inline-block;
-  display: flex;
-  align-items: center;
 }
 
 .banner {
@@ -137,16 +103,9 @@ li {
   h3 {
     font-family: $sub-heading;
   }
-  ul {
-    // border: 1px solid purple;
-  }
+
   li {
     color: white;
-    // padding: 20px;
-    // border: 1px solid white;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     a {
       color: white;
     }
@@ -198,29 +157,10 @@ li {
   right: 0;
 }
 
-img {
-  height: 50px;
-  width: 50px;
-  margin-right: 20px;
-}
-
-.line {
-  border: thin solid $light-green;
-  width: 20px;
-  margin: 20px 0px;
-}
-
-.test {
+.projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
 }
-
-// .hidden {
-//   display: none;
-// }
 
 .content-container {
   margin: 0px 10px;

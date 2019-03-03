@@ -6,7 +6,7 @@ const ProjectPage = () => {
   return (
     <div id='projects'>
       <Heading src='/images/idea.svg' title='My Projects' />
-      <div className='test'>
+      <div className='projects'>
         <Project
           name='oneUp'
           src='/images/oneUp.png'
