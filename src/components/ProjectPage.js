@@ -6,7 +6,7 @@ import Heading from './Heading';
 
 const ProjectPage = () => {
   return (
-    <Container>
+    <Container id='projects'>
       <Heading src='/images/idea.svg' title='My Projects' />
       <div className='test'>
         <Project
@@ -15,14 +15,7 @@ const ProjectPage = () => {
           content='Social Media web app based on challenges. Users can view and complete social challenges.'
           url='http://1up-app.s3-website-ap-southeast-2.amazonaws.com'
         />
-        <Project name='oneUp' src='/images/oneUp.png' />
-        <Project name='oneUp' src='/images/oneUp.png' />
       </div>
-      {/* <Button
-        text='View my Github'
-        src='/images/github.svg'
-        url='https://github.com/jamesphongduong'
-      /> */}
     </Container>
   );
 };

@@ -6,11 +6,11 @@ const NavBar = () => {
     <Container>
       <ul className='navbar-ul'>
         <li className='hvr-underline-from-center'>
-          <a href='#'> projects </a>
+          <a href='#projects'> projects </a>
         </li>
 
         <li className='hvr-underline-from-center'>
-          <a href='#'>me </a>
+          <a href='#me'>me </a>
         </li>
       </ul>
     </Container>

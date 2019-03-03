@@ -29,14 +29,15 @@ const Project = props => {
     <div>
       <div className='project-container'>
         <div className='project-label-container'>
-          {/* <a href={props.href}> */}
           <h4 className='project-label'>{props.name}</h4> {/* </a> */}
           <img src={props.src} />
         </div>
       </div>
       <div className='content-container hidden'>
         <p>{props.content}</p>
-        <a href={props.url}>{props.url} </a>
+        <a href={props.url} target='_blank'>
+          {props.url}{' '}
+        </a>
       </div>
     </div>
   );

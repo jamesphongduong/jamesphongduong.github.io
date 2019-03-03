@@ -1,3 +1,6 @@
+* {
+  scroll-behavior: smooth; }
+
 h1,
 h4 {
   font-family: "Roboto Mono";
@@ -30,15 +33,15 @@ li {
       color: black; }
 
 .heading-container {
+  margin: 40px 0px;
   display: flex;
-  align-items: center;
-  margin-top: 20px; }
+  align-items: center; }
   .heading-container img {
     margin-right: 20px; }
 
 .project-container {
-  margin: 20px 10px;
-  background-color: #e6e6e6;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/oneUp-bg.png");
+  background-size: cover;
   height: 200px; }
   .project-container .project-label-container {
     position: relative;
@@ -146,6 +149,8 @@ img {
   margin: 0px 10px; }
 
 hr {
-  border-radius: 5px;
-  border-color: #97dfc9;
-  margin-left: 0; }
+  margin: 40px 0px;
+  border-color: #97dfc9; }
+
+#me ul {
+  grid-template-columns: repeat(auto-fill, 150px); }

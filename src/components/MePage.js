@@ -7,14 +7,13 @@ import Heading from './Heading';
 
 const MePage = () => {
   return (
-    <Container>
+    <Container id='me'>
       <Heading src='/images/nerd.svg' title='Me' />
       <p>
         I enjoy the process of designing and building websites. It’s a great
-        feeling working with others and bringing their ideas to life. Please hit
-        me up if you would like to work together :)
+        feeling working with others and bringing their ideas to life.
       </p>
-      <Heading src='/images/code.svg' title='Technology I know' />
+      <Heading src='/images/code.svg' title='Tech I speak' />
       <h2>Front-end Development</h2>
       <ul>
         <Card src='/images/html5.svg' text='HTML5' />
