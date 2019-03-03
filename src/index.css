@@ -6,7 +6,16 @@ h4 {
 h2,
 li,
 .button {
-  font-family: "Roboto Mono"; }
+  font-family: "Roboto Mono";
+  color: black; }
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+li {
+  display: flex;
+  align-items: center; }
 
 .navbar-ul {
   display: flex;
@@ -15,6 +24,8 @@ li,
   .navbar-ul li {
     margin-left: 20%;
     padding: 20px 0px; }
+    .navbar-ul li a {
+      color: black; }
 
 .heading-container {
   display: flex;
@@ -29,20 +40,23 @@ li,
   height: 200px; }
   .project-container .project-label-container {
     position: relative;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    height: 100%; }
     .project-container .project-label-container img {
-      width: 50px;
-      height: 50px; }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px; }
     .project-container .project-label-container .project-label {
       position: absolute;
-      bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
+      bottom: 10px;
       background-color: #f8a8b9;
       padding: 10px; }
+      .project-container .project-label-container .project-label:hover {
+        cursor: pointer; }
 
 .inline-block {
   display: inline-block; }
@@ -50,7 +64,7 @@ li,
 .button {
   padding: 10px;
   margin: 20px 0px;
-  border: 1px solid #f8a8b9;
+  border: 2px solid #f8a8b9;
   display: inline-block;
   display: flex;
   align-items: center; }
@@ -118,3 +132,8 @@ img {
 
 .content-container {
   margin: 0px 10px; }
+
+hr {
+  border-radius: 5px;
+  border-color: #97dfc9;
+  margin-left: 0; }

@@ -7,9 +7,10 @@ $(() => {
   $('.hidden').hide();
 
   // click expand function
-  $('.project-label-container').click(function() {
+  $('.project-label').click(function() {
     // get content
     const content = $(this)
+      .parent()
       .parent()
       .next();
     // make inactive
@@ -28,9 +29,8 @@ const Project = props => {
     <div>
       <div className='project-container'>
         <div className='project-label-container'>
-          <a href={props.href}>
-            <h4 className='project-label'>{props.name}</h4>{' '}
-          </a>
+          {/* <a href={props.href}> */}
+          <h4 className='project-label'>{props.name}</h4> {/* </a> */}
           <img src={props.src} />
         </div>
       </div>

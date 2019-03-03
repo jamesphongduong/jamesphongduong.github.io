@@ -13,7 +13,11 @@ const ProjectPage = () => {
         <Project name='oneUp' src='/images/oneUp.png' />
         <Project name='oneUp' src='/images/oneUp.png' />
       </div>
-      <Button text='View my Github' src='/images/github.svg' url='#' />
+      <Button
+        text='View my Github'
+        src='/images/github.svg'
+        url='https://github.com/jamesphongduong'
+      />
     </Container>
   );
 };

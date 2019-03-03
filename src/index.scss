@@ -4,7 +4,7 @@ $light-green: #97dfc9;
 $red: #f8a8b9;
 $light-grey: #e6e6e6;
 $white: white;
-// $black: #727272;
+$black: black;
 
 //fonts
 $header: 'Monda';
@@ -23,6 +23,16 @@ h2,
 li,
 .button {
   font-family: $sub-heading;
+  color: black;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+li {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-ul {
@@ -32,6 +42,9 @@ li,
   li {
     margin-left: 20%;
     padding: 20px 0px;
+    a {
+      color: $black;
+    }
   }
 }
 
@@ -59,25 +72,27 @@ li,
   .project-label-container {
     position: relative;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     img {
       // border: 1px solid grey;
-      width: 50px;
-      height: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px;
       // padding: 30%;
       // object-fit: contain;
     }
     .project-label {
       position: absolute;
-      bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
-      // bottom: 20px;
-      // left: 20px;
+      bottom: 10px;
       background-color: $red;
       padding: $padding-button;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
@@ -90,7 +105,7 @@ li,
   padding: $padding-button;
   // width: 200px;
   margin: 20px 0px;
-  border: 1px solid $red;
+  border: 2px solid $red;
   display: inline-block;
   display: flex;
   align-items: center;
@@ -174,4 +189,10 @@ img {
 
 .content-container {
   margin: 0px 10px;
+}
+
+hr {
+  border-radius: 5px;
+  border-color: $light-green;
+  margin-left: 0;
 }
