@@ -71,12 +71,12 @@ img {
 .project-container {
   // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
   //   url('/images/oneUp-bg.png');
-  border-radius: 5px;
   background: $light-grey;
   background-size: cover;
   height: 200px;
   // margin-bottom: 20px;
   .project-label-container {
+    font-family: $sub-heading !important;
     position: relative;
     height: 100%;
 
@@ -95,7 +95,6 @@ img {
       bottom: 10px;
       background-color: $red;
       padding: $padding-button;
-      border-radius: 5px;
       &:hover {
         cursor: pointer;
       }
@@ -183,7 +182,7 @@ img {
   margin: 20px 0px;
   // margin: 0px 10px;
   // text-decoration: underline;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   border-bottom: 2px solid $green;
 }
 
@@ -196,4 +195,14 @@ hr {
   ul {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.button {
+  margin-top: 40px;
+  display: inline-block;
+  border: 1px solid $red;
+  padding: $padding-button;
+  background-color: $red;
+  color: $white;
+  font-family: $aub-heading;
 }

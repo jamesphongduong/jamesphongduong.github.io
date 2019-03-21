@@ -46,7 +46,6 @@ img {
   align-items: center; }
 
 .project-container {
-  border-radius: 5px;
   background: #e6e6e6;
   background-size: cover;
   height: 200px; }
@@ -66,8 +65,7 @@ img {
       transform: translateX(-50%);
       bottom: 10px;
       background-color: #f28098;
-      padding: 10px;
-      border-radius: 5px; }
+      padding: 10px; }
       .project-container .project-label-container .project-label:hover {
         cursor: pointer; }
 
@@ -136,7 +134,7 @@ img {
   display: inline-block;
   color: black;
   margin: 20px 0px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   border-bottom: 2px solid #68c5a8; }
 
 hr {
@@ -145,3 +143,11 @@ hr {
 
 #aboutme ul {
   grid-template-columns: repeat(3, 1fr); }
+
+.button {
+  margin-top: 40px;
+  display: inline-block;
+  border: 1px solid #f28098;
+  padding: 10px;
+  background-color: #f28098;
+  color: white; }
