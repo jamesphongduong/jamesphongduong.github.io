@@ -34,10 +34,16 @@ const Project = props => {
         </div>
       </div>
       <div className='content-container hidden'>
-        <p>{props.content}</p>
-        <a href={props.url} target='_blank'>
-          {props.url}{' '}
-        </a>
+        <h4>The Idea</h4>
+        <div>{props.content}</div>
+        <h4>Tech Stack</h4>
+        <div>{props.content2}</div>
+        <h4> Website Demo</h4>
+        <div>
+          <a href={props.url} target='_blank'>
+            {props.url}{' '}
+          </a>
+        </div>
       </div>
     </div>
   );

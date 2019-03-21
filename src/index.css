@@ -28,8 +28,11 @@ img {
   margin-right: 20px; }
 
 .navbar-ul {
+  height: 60px;
+  margin: 0px;
   display: flex;
   list-style: none;
+  align-items: center;
   justify-content: flex-end; }
   .navbar-ul li {
     margin-left: 20%;
@@ -43,7 +46,8 @@ img {
   align-items: center; }
 
 .project-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/oneUp-bg.png");
+  border-radius: 5px;
+  background: #e6e6e6;
   background-size: cover;
   height: 200px; }
   .project-container .project-label-container {
@@ -62,7 +66,8 @@ img {
       transform: translateX(-50%);
       bottom: 10px;
       background-color: #f28098;
-      padding: 5px; }
+      padding: 10px;
+      border-radius: 5px; }
       .project-container .project-label-container .project-label:hover {
         cursor: pointer; }
 
@@ -127,12 +132,16 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
 
-.content-container {
-  margin: 0px 10px; }
+.content-container h4 {
+  display: inline-block;
+  color: black;
+  margin: 20px 0px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #68c5a8; }
 
 hr {
   margin: 40px 0px;
   border-color: #97dfc9; }
 
-#me ul {
-  grid-template-columns: repeat(auto-fill, 150px); }
+#aboutme ul {
+  grid-template-columns: repeat(3, 1fr); }

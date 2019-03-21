@@ -10,7 +10,7 @@ const NavBar = () => {
         </li>
 
         <li className='hvr-underline-from-center'>
-          <a href='#me'>me </a>
+          <a href='#aboutme'>about me </a>
         </li>
       </ul>
     </Container>

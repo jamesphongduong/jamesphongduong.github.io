@@ -10,7 +10,13 @@ const ProjectPage = () => {
         <Project
           name='oneUp'
           src='/images/oneUp.png'
-          content='Social Media web app based on challenges. Users can view and complete social challenges.'
+          content={[
+            <p>
+              Social Media web app based on challenges. Users can view and
+              complete social challenges
+            </p>
+          ]}
+          content2='MERN Stack (MongoDB, Express, React & NodeJs)'
           url='http://1up-app.s3-website-ap-southeast-2.amazonaws.com'
         />
       </div>

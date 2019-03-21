@@ -5,7 +5,7 @@ $red: #f28098;
 $light-grey: #e6e6e6;
 $white: white;
 $black: black;
-$padding-button: 5px;
+$padding-button: 10px;
 
 //fonts
 $header: 'Monda';
@@ -47,8 +47,11 @@ img {
 }
 
 .navbar-ul {
+  height: 60px;
+  margin: 0px;
   display: flex;
   list-style: none;
+  align-items: center;
   justify-content: flex-end;
   li {
     margin-left: 20%;
@@ -66,13 +69,17 @@ img {
 }
 
 .project-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('/images/oneUp-bg.png');
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  //   url('/images/oneUp-bg.png');
+  border-radius: 5px;
+  background: $light-grey;
   background-size: cover;
   height: 200px;
+  // margin-bottom: 20px;
   .project-label-container {
     position: relative;
     height: 100%;
+
     img {
       position: absolute;
       top: 50%;
@@ -88,6 +95,7 @@ img {
       bottom: 10px;
       background-color: $red;
       padding: $padding-button;
+      border-radius: 5px;
       &:hover {
         cursor: pointer;
       }
@@ -169,8 +177,14 @@ img {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.content-container {
-  margin: 0px 10px;
+.content-container h4 {
+  display: inline-block;
+  color: black;
+  margin: 20px 0px;
+  // margin: 0px 10px;
+  // text-decoration: underline;
+  padding-bottom: 10px;
+  border-bottom: 2px solid $green;
 }
 
 hr {
@@ -178,8 +192,8 @@ hr {
   border-color: $light-green;
 }
 
-#me {
+#aboutme {
   ul {
-    grid-template-columns: repeat(auto-fill, 150px);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
