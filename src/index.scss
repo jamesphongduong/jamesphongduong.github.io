@@ -8,7 +8,7 @@ $black: black;
 $padding-button: 10px;
 
 //fonts
-$header: 'Monda';
+$header: 'Roboto Mono';
 $sub-heading: 'Roboto Mono';
 $p-text: 'STIXIntegralsUpSm';
 
@@ -122,13 +122,17 @@ img {
   height: 80vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   h1 {
     font-family: $header;
-    font-size: 36px;
+    font-family: 'sans-serif';
+    font-size: 50px;
+    letter-spacing: 2px;
   }
   h3 {
+    letter-spacing: 1.5px;
+    font-size: 20px;
     font-family: $sub-heading;
   }
 
@@ -214,6 +218,7 @@ hr {
 }
 
 #aboutme > h2 {
+  font-family: $sub-heading;
   display: inline-block;
   margin: 40px 0px 20px;
   @include subheading_underline();
@@ -264,4 +269,15 @@ hr {
 }
 .swal-icon--success__ring {
   border-color: $green;
+}
+
+.plugs {
+  // border: 1px solid purple;
+  width: 25%;
+}
+
+.banner {
+  h3 {
+    margin: 60px 0px;
+  }
 }
