@@ -8,6 +8,7 @@ const ProjectPage = () => {
     <div id='projects'>
       <Heading title='My Projects' headingIcon='heading-icon1' />
       <div className='projects'>
+        {/* project 1 */}
         <Project
           name='oneUp'
           src='/images/oneUp.png'
@@ -19,8 +20,21 @@ const ProjectPage = () => {
               completing the relevant challenge.
             </p>
           ]}
-          content2='MERN Stack (MongoDB, Express, React & NodeJs)'
+          content2='MERN Stack (MongoDB, Express, React & NodeJs), AWS S3 (Storage) & Heroku (Deployment)'
           url='http://1up-app.s3-website-ap-southeast-2.amazonaws.com'
+        />
+        {/* project 2 */}
+        <Project
+          name='CasualMeals'
+          src='/images/chef-flat.svg'
+          content={[
+            <p>
+              Two sided marketplace where chefs can list and sell meals, and
+              customers able to view and purchase meals.
+            </p>
+          ]}
+          content2='Ruby on Rails, Postgresql, AWS S3 (Storage), Stripe (Payment) & Heroku (Deployment)'
+          url='https://casualmeals.herokuapp.com/'
         />
       </div>
       <Button

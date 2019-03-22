@@ -66,8 +66,8 @@ img {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 30px;
-      height: 30px; }
+      width: 40px;
+      height: 40px; }
     .project-container .project-label-container .project-label {
       position: absolute;
       left: 50%;
@@ -121,7 +121,7 @@ img {
   bottom: 10px;
   background: #f8a8b9;
   height: 3px;
-  border-radius: 2px;
+  border-radius: 25px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
   -webkit-transition-duration: 0.3s;
@@ -137,7 +137,8 @@ img {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; }
 
 .content-container h4 {
   display: inline-block;

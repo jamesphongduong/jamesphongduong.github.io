@@ -16,11 +16,11 @@ $(() => {
     // make inactive
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
-      return $(content).slideUp('slow');
+      return $(content).slideUp('fast');
     }
     // make active
     $(this).addClass('active');
-    $(content).slideDown('slow');
+    $(content).slideDown('fast');
   });
 });
 

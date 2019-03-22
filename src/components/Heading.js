@@ -6,7 +6,6 @@ const Heading = props => {
       <div className='heading-container'>
         <div className={`${props.headingIcon} heading-icon`}> </div>
         <h2>{props.title}</h2>
-        {/* </div> */}
         <hr className='subhr' />
       </div>
     </div>

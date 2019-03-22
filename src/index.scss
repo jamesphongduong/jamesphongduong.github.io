@@ -86,12 +86,9 @@ img {
 }
 
 .project-container {
-  // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  //   url('/images/oneUp-bg.png');
   background: $light-grey;
   background-size: cover;
   height: 200px;
-  // margin-bottom: 20px;
   .project-label-container {
     font-family: $sub-heading !important;
     position: relative;
@@ -102,8 +99,8 @@ img {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
     }
     .project-label {
       position: absolute;
@@ -173,7 +170,7 @@ img {
   bottom: 10px;
   background: #f8a8b9;
   height: 3px;
-  border-radius: 2px;
+  border-radius: 25px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
   -webkit-transition-duration: 0.3s;
@@ -191,6 +188,7 @@ img {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
 .content-container h4 {
