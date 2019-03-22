@@ -9,6 +9,7 @@
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5",
     "semantic-ui-react": "^0.85.0",
+    "sweetalert": "^2.1.2",
     "webfontloader": "^1.6.28"
   },
   "scripts": {
