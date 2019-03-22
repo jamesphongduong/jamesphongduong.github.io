@@ -196,3 +196,9 @@ hr {
 
 .footer {
   margin: 20px 0px; }
+
+.swal-icon--success__line {
+  background-color: #68c5a8; }
+
+.swal-icon--success__ring {
+  border-color: #68c5a8; }

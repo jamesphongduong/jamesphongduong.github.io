@@ -257,3 +257,11 @@ hr {
 .footer {
   margin: 20px 0px;
 }
+
+//sweet alert override
+.swal-icon--success__line {
+  background-color: $green;
+}
+.swal-icon--success__ring {
+  border-color: $green;
+}

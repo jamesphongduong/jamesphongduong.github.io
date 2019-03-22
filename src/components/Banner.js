@@ -15,7 +15,7 @@ window.onload = () => {
     document.body.removeChild(el);
     swal({
       icon: 'success',
-      text: 'Email copied to clipboard: \n\njames.duong93@gmail.com',
+      text: 'Email copied to clipboard! \n\njames.duong93@gmail.com',
       button: false,
       timer: 2000
     });
