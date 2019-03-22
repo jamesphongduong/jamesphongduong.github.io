@@ -4,10 +4,10 @@ const Heading = props => {
   return (
     <div>
       <div className='heading-container'>
-        <img src={props.src} />
-        <div>
-          <h2>{props.title}</h2>
-        </div>
+        <div className={`${props.headingIcon} heading-icon`}> </div>
+        <h2>{props.title}</h2>
+        {/* </div> */}
+        <hr className='subhr' />
       </div>
     </div>
   );

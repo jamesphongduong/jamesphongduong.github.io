@@ -6,7 +6,7 @@ import Button from './Button';
 const ProjectPage = () => {
   return (
     <div id='projects'>
-      <Heading src='/images/idea.svg' title='My Projects' />
+      <Heading title='My Projects' headingIcon='heading-icon1' />
       <div className='projects'>
         <Project
           name='oneUp'

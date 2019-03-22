@@ -5,12 +5,21 @@ import Heading from './Heading';
 const MePage = () => {
   return (
     <div id='aboutme'>
-      <Heading src='/images/nerd.svg' title='Me' />
+      <Heading title='Me' headingIcon='heading-icon2' />
       <p>
-        I enjoy the process of designing and building websites. It’s a great
-        feeling working with others and bringing their ideas to life.
+        I enjoy the process of designing and building websites from the visual
+        aesthetics of a website to the geeky code that's written.
       </p>
-      <Heading src='/images/code.svg' title='Tech I speak' />
+      <p>
+        I am a full-stack web developer with strengths in the MERN Stack:
+        MongoDB, Express, React and NodeJs.
+      </p>
+
+      <Heading
+        // src='/images/code.svg'
+        title='Tech I speak'
+        headingIcon='heading-icon3'
+      />
       <h2>Front-end Development</h2>
       <ul>
         <Card src='/images/html5.svg' text='HTML5' />
@@ -33,17 +42,6 @@ const MePage = () => {
         <Card src='/images/s3.svg' text='Amazon Storage Service' />
         <Card src='/images/wordpress.svg' text='WordPress' />
       </ul>
-      {/* <Button
-        text='Connect with me'
-        src='/images/github.svg'
-        url='https://github.com/jamesphongduong'
-      />
-      <br />
-      <Button
-        text='Email me'
-        src='/images/github.svg'
-        url='https://github.com/jamesphongduong'
-      /> */}
     </div>
   );
 };

@@ -43,7 +43,7 @@ li {
 img {
   width: 50px;
   height: 50px;
-  margin-right: 20px;
+  // margin-right: 20px;
 }
 
 .navbar-ul {
@@ -63,9 +63,20 @@ img {
 }
 
 .heading-container {
+  display: inline-block;
   margin: 40px 0px;
-  display: flex;
-  align-items: center;
+
+  div {
+    display: inline-block;
+  }
+  h2 {
+    margin: 0px;
+    vertical-align: top;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+  }
 }
 
 .project-container {
@@ -180,20 +191,22 @@ img {
   display: inline-block;
   color: black;
   margin: 20px 0px;
-  // margin: 0px 10px;
-  // text-decoration: underline;
   padding-bottom: 5px;
-  border-bottom: 2px solid $green;
+  border-bottom: 1px solid $black;
 }
 
 hr {
   margin: 40px 0px;
-  border-color: $light-green;
+  border: 1px solid $green;
 }
 
 #aboutme {
   ul {
     grid-template-columns: repeat(3, 1fr);
+  }
+  p {
+    font-size: 18px;
+    line-height: 2;
   }
 }
 
@@ -204,5 +217,29 @@ hr {
   padding: $padding-button;
   background-color: $red;
   color: $white;
-  font-family: $aub-heading;
+  font-family: $sub-heading;
+}
+
+h2 {
+  // vertical-align: bottom ;
+}
+
+.subhr {
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.heading-icon {
+  height: 40px;
+  width: 40px;
+  background-size: contain !important;
+}
+.heading-icon1 {
+  background: url('/images/idea.svg');
+}
+.heading-icon2 {
+  background: url('/images/nerd.svg');
+}
+.heading-icon3 {
+  background: url('/images/code.svg');
 }

@@ -24,8 +24,7 @@ li {
 
 img {
   width: 50px;
-  height: 50px;
-  margin-right: 20px; }
+  height: 50px; }
 
 .navbar-ul {
   height: 60px;
@@ -41,15 +40,24 @@ img {
       color: black; }
 
 .heading-container {
-  margin: 40px 0px;
-  display: flex;
-  align-items: center; }
+  display: inline-block;
+  margin: 40px 0px; }
+  .heading-container div {
+    display: inline-block; }
+  .heading-container h2 {
+    margin: 0px;
+    vertical-align: top;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px; }
 
 .project-container {
   background: #e6e6e6;
   background-size: cover;
   height: 200px; }
   .project-container .project-label-container {
+    font-family: "Roboto Mono" !important;
     position: relative;
     height: 100%; }
     .project-container .project-label-container img {
@@ -135,14 +143,18 @@ img {
   color: black;
   margin: 20px 0px;
   padding-bottom: 5px;
-  border-bottom: 2px solid #68c5a8; }
+  border-bottom: 1px solid black; }
 
 hr {
   margin: 40px 0px;
-  border-color: #97dfc9; }
+  border: 1px solid #68c5a8; }
 
 #aboutme ul {
   grid-template-columns: repeat(3, 1fr); }
+
+#aboutme p {
+  font-size: 18px;
+  line-height: 2; }
 
 .button {
   margin-top: 40px;
@@ -150,4 +162,23 @@ hr {
   border: 1px solid #f28098;
   padding: 10px;
   background-color: #f28098;
-  color: white; }
+  color: white;
+  font-family: "Roboto Mono"; }
+
+.subhr {
+  margin: 10px 0px;
+  width: 100%; }
+
+.heading-icon {
+  height: 40px;
+  width: 40px;
+  background-size: contain !important; }
+
+.heading-icon1 {
+  background: url("/images/idea.svg"); }
+
+.heading-icon2 {
+  background: url("/images/nerd.svg"); }
+
+.heading-icon3 {
+  background: url("/images/code.svg"); }
