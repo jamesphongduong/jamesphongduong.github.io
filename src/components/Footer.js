@@ -3,7 +3,7 @@ import { Icon } from 'semantic-ui-react';
 
 const Footer = () => {
   return (
-    <div>
+    <div className='footer'>
       {' '}
       <Icon name='copyright outline' /> Copyright 2019 | James Duong
     </div>

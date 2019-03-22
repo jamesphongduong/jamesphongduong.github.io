@@ -24,7 +24,8 @@ li {
 
 img {
   width: 50px;
-  height: 50px; }
+  height: 50px;
+  margin-right: 20px; }
 
 .navbar-ul {
   height: 60px;
@@ -142,11 +143,11 @@ img {
   display: inline-block;
   color: black;
   margin: 20px 0px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid black; }
+  padding-bottom: 10px;
+  border-bottom: 2px solid #97dfc9; }
 
 hr {
-  margin: 40px 0px;
+  margin: 40px 0px 0px;
   border: 1px solid #68c5a8; }
 
 #aboutme ul {
@@ -155,6 +156,15 @@ hr {
 #aboutme p {
   font-size: 18px;
   line-height: 2; }
+
+#aboutme > h2 {
+  display: inline-block;
+  margin: 40px 0px 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #97dfc9; }
+
+#aboutme > h2:nth-child(5) {
+  margin-top: 0px; }
 
 .button {
   margin-top: 40px;
@@ -166,7 +176,7 @@ hr {
   font-family: "Roboto Mono"; }
 
 .subhr {
-  margin: 10px 0px;
+  margin: 10px 0px 0px;
   width: 100%; }
 
 .heading-icon {
@@ -182,3 +192,6 @@ hr {
 
 .heading-icon3 {
   background: url("/images/code.svg"); }
+
+.footer {
+  margin: 20px 0px; }

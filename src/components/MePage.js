@@ -29,8 +29,8 @@ const MePage = () => {
       </ul>
       <h2>Back-end Development</h2>
       <ul>
-        <Card src='/images/nodejs.svg' text='NodeJs' />
         <Card src='/images/ruby.svg' text='Ruby / Ruby on Rails' />
+        <Card src='/images/nodejs.svg' text='NodeJs' />
         <Card src='/images/mongodb.svg' text='MongoDB' />
         <Card src='/images/postgresql.svg' text='Postgresql' />
         <Card src='/images/php.svg' text='PHP' />

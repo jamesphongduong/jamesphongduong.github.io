@@ -12,6 +12,12 @@ $header: 'Monda';
 $sub-heading: 'Roboto Mono';
 $p-text: 'STIXIntegralsUpSm';
 
+//mixins
+@mixin subheading_underline {
+  padding-bottom: 10px;
+  border-bottom: 2px solid $light-green;
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -43,7 +49,7 @@ li {
 img {
   width: 50px;
   height: 50px;
-  // margin-right: 20px;
+  margin-right: 20px;
 }
 
 .navbar-ul {
@@ -191,12 +197,11 @@ img {
   display: inline-block;
   color: black;
   margin: 20px 0px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid $black;
+  @include subheading_underline();
 }
 
 hr {
-  margin: 40px 0px;
+  margin: 40px 0px 0px;
   border: 1px solid $green;
 }
 
@@ -210,6 +215,17 @@ hr {
   }
 }
 
+#aboutme > h2 {
+  display: inline-block;
+  margin: 40px 0px 20px;
+  @include subheading_underline();
+}
+
+//first heading
+#aboutme > h2:nth-child(5) {
+  margin-top: 0px;
+}
+
 .button {
   margin-top: 40px;
   display: inline-block;
@@ -220,12 +236,8 @@ hr {
   font-family: $sub-heading;
 }
 
-h2 {
-  // vertical-align: bottom ;
-}
-
 .subhr {
-  margin: 10px 0px;
+  margin: 10px 0px 0px;
   width: 100%;
 }
 
@@ -242,4 +254,8 @@ h2 {
 }
 .heading-icon3 {
   background: url('/images/code.svg');
+}
+
+.footer {
+  margin: 20px 0px;
 }
