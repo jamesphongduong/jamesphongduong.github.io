@@ -87,10 +87,9 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
   .banner h1 {
-    font-family: "Roboto Mono";
-    font-family: 'sans-serif';
+    font-family: "Muli";
     font-size: 50px;
-    letter-spacing: 2px; }
+    letter-spacing: 5px; }
   .banner h3 {
     letter-spacing: 1.5px;
     font-size: 20px;

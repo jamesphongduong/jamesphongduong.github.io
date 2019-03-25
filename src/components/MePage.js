@@ -5,13 +5,13 @@ import Heading from './Heading';
 const MePage = () => {
   return (
     <div id='aboutme'>
-      <Heading title='Me' headingIcon='heading-icon2' />
+      <Heading title='About Me' headingIcon='heading-icon2' />
       <p>
         I enjoy the process of designing and building websites from the visual
         aesthetics of a website to the geeky code that's written.
       </p>
       <p>
-        I am a full-stack web developer with strengths in the MERN Stack:
+        I am a full-stack web developer with strengths with the MERN Stack:
         MongoDB, Express, React and NodeJs.
       </p>
 
@@ -22,6 +22,7 @@ const MePage = () => {
       />
       <h2>Front-end Development</h2>
       <ul>
+        <Card src='/images/react-native.svg' text='React' />
         <Card src='/images/html5.svg' text='HTML5' />
         <Card src='/images/css.svg' text='CSS' />
         <Card src='/images/javascript.svg' text='JavaScript' />
@@ -31,6 +32,7 @@ const MePage = () => {
       <ul>
         <Card src='/images/ruby.svg' text='Ruby / Ruby on Rails' />
         <Card src='/images/nodejs.svg' text='NodeJs' />
+        <Card src='/images/express.svg' text='ExpressJs' />
         <Card src='/images/mongodb.svg' text='MongoDB' />
         <Card src='/images/postgresql.svg' text='Postgresql' />
         <Card src='/images/php.svg' text='PHP' />

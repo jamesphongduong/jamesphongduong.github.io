@@ -5,7 +5,7 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ['Monda:700', 'Roboto Mono:300', 'sans-serif']
+    families: ['Muli', 'Monda:700', 'Roboto Mono:300', 'sans-serif']
   }
 });
 
