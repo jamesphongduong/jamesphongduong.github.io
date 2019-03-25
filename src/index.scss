@@ -1,4 +1,4 @@
-// colors
+// Colors
 $green: #68c5a8;
 $light-green: #97dfc9;
 $red: #f28098;
@@ -7,21 +7,22 @@ $white: white;
 $black: black;
 $padding-button: 10px;
 
-//fonts
+// Fonts
 $header: 'Muli';
 $sub-heading: 'Roboto Mono';
 $p-text: 'STIXIntegralsUpSm';
 
-//screen size
+// Screen size
 $md: 992px;
 $sd: 480px;
 
-//mixins
+// Mixins
 @mixin subheading_underline {
   padding-bottom: 10px;
   border-bottom: 2px solid $light-green;
 }
 
+// General styling
 * {
   scroll-behavior: smooth;
 }
@@ -56,6 +57,17 @@ img {
   margin-right: 20px;
 }
 
+hr {
+  margin: 40px 0px 0px;
+  border: 1px solid $green;
+}
+
+.subhr {
+  margin: 10px 0px 0px;
+  width: 100%;
+}
+
+// Navbar Section
 .navbar-ul {
   height: 60px;
   margin: 0px;
@@ -72,23 +84,77 @@ img {
   }
 }
 
-.heading-container {
-  display: inline-block;
-  margin: 40px 0px;
-
-  div {
-    display: inline-block;
+// Banner Section
+.banner {
+  color: $white;
+  background-color: $green;
+  height: 80vh;
+  .container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media only screen and (max-width: $md) {
+      grid-template-columns: 1fr;
+    }
   }
-  h2 {
-    margin: 0px;
-    vertical-align: top;
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    padding-left: 20px;
+  h1 {
+    font-family: $header;
+    font-size: 50px;
+    letter-spacing: 5px;
+    @media only screen and (max-width: $md) {
+      font-size: 40px;
+    }
+    @media only screen and (max-width: $sd) {
+      font-size: 35px;
+    }
+  }
+  h3 {
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-family: $sub-heading;
+    margin: 60px 0px;
+    @media only screen and (max-width: $sd) {
+      font-size: 18px;
+    }
+  }
+  li {
+    color: white;
+    a {
+      color: white;
+    }
+    i {
+      box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0) !important;
+      &:hover {
+        box-shadow: 0 0 0 0.1em rgba(255, 255, 255, 1) !important;
+      }
+    }
+    #email:hover {
+      cursor: alias;
+    }
   }
 }
 
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner-image {
+  align-items: center;
+  @media only screen and (max-width: $md) {
+    display: none;
+  }
+}
+#banner-image {
+  width: 40%;
+  height: auto;
+}
+
+.plugs {
+  width: 25%;
+}
+
+// Project Section
 .project-container {
   background: $light-grey;
   background-size: cover;
@@ -120,58 +186,36 @@ img {
   }
 }
 
-.banner {
-  color: $white;
-  background-color: $green;
-  height: 80vh;
-  .container {
-    height: 100%;
-    display: grid;
-    // align-items: center;
-    // text-align: center;
-    grid-template-columns: repeat(2, 1fr);
-    @media only screen and (max-width: $md) {
-      grid-template-columns: 1fr;
-    }
-  }
-  h1 {
-    font-family: $header;
-    font-size: 50px;
-    // font-size: 3.5rem;
-    // font-size
-    letter-spacing: 5px;
-    @media only screen and (max-width: $md) {
-      font-size: 40px;
-    }
-    @media only screen and (max-width: $sd) {
-      font-size: 35px;
-    }
-  }
-  h3 {
-    letter-spacing: 1.5px;
-    font-size: 20px;
-    font-family: $sub-heading;
-  }
-
-  li {
-    color: white;
-    a {
-      color: white;
-    }
-
-    i {
-      box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0) !important;
-      &:hover {
-        box-shadow: 0 0 0 0.1em rgba(255, 255, 255, 1) !important;
-      }
-    }
-    #email:hover {
-      cursor: alias;
-    }
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  @media only screen and (max-width: $md) {
+    grid-template-columns: 1fr;
   }
 }
 
-//hover
+.content-container h4 {
+  display: inline-block;
+  color: black;
+  margin: 20px 0px;
+  @include subheading_underline();
+}
+
+// About me section
+#aboutme > h2 {
+  font-family: $sub-heading;
+  display: inline-block;
+  margin: 40px 0px 20px;
+  @include subheading_underline();
+}
+
+// First heading
+#aboutme > h2:nth-child(5) {
+  margin-top: 0px;
+}
+
+// Hover
 /* Underline From Center */
 .hvr-underline-from-center {
   display: inline-block;
@@ -206,27 +250,6 @@ img {
   right: 0;
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  @media only screen and (max-width: $md) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.content-container h4 {
-  display: inline-block;
-  color: black;
-  margin: 20px 0px;
-  @include subheading_underline();
-}
-
-hr {
-  margin: 40px 0px 0px;
-  border: 1px solid $green;
-}
-
 #aboutme {
   ul {
     grid-template-columns: repeat(3, 1fr);
@@ -240,31 +263,22 @@ hr {
   }
 }
 
-#aboutme > h2 {
-  font-family: $sub-heading;
+// Heading Component
+.heading-container {
   display: inline-block;
-  margin: 40px 0px 20px;
-  @include subheading_underline();
-}
+  margin: 40px 0px;
 
-//first heading
-#aboutme > h2:nth-child(5) {
-  margin-top: 0px;
-}
-
-.button {
-  margin-top: 40px;
-  display: inline-block;
-  border: 1px solid $red;
-  padding: $padding-button;
-  background-color: $red;
-  color: $white;
-  font-family: $sub-heading;
-}
-
-.subhr {
-  margin: 10px 0px 0px;
-  width: 100%;
+  div {
+    display: inline-block;
+  }
+  h2 {
+    margin: 0px;
+    vertical-align: top;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+  }
 }
 
 .heading-icon {
@@ -282,48 +296,26 @@ hr {
   background: url('/images/code.svg');
 }
 
+// Button Component
+.button {
+  margin-top: 40px;
+  display: inline-block;
+  border: 1px solid $red;
+  padding: $padding-button;
+  background-color: $red;
+  color: $white;
+  font-family: $sub-heading;
+}
+
+// Footer section
 .footer {
   margin: 20px 0px;
 }
 
-//sweet alert override
+// Sweet alert styles override
 .swal-icon--success__line {
   background-color: $green;
 }
 .swal-icon--success__ring {
   border-color: $green;
-}
-
-.plugs {
-  // border: 1px solid purple;
-  width: 25%;
-}
-
-.banner {
-  position: relative;
-  h3 {
-    margin: 60px 0px;
-  }
-}
-
-.banner-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  // justify-content: space-around;
-  &.one {
-    // align-items: center;
-    // border: 1px solid yellow;
-    // align-items:
-  }
-}
-.banner-image {
-  align-items: center;
-  @media only screen and (max-width: $md) {
-    display: none;
-  }
-}
-#banner-image {
-  width: 40%;
-  height: auto;
 }

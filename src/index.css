@@ -27,6 +27,14 @@ img {
   height: 50px;
   margin-right: 20px; }
 
+hr {
+  margin: 40px 0px 0px;
+  border: 1px solid #68c5a8; }
+
+.subhr {
+  margin: 10px 0px 0px;
+  width: 100%; }
+
 .navbar-ul {
   height: 60px;
   margin: 0px;
@@ -40,18 +48,63 @@ img {
     .navbar-ul li a {
       color: black; }
 
-.heading-container {
-  display: inline-block;
-  margin: 40px 0px; }
-  .heading-container div {
-    display: inline-block; }
-  .heading-container h2 {
-    margin: 0px;
-    vertical-align: top;
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    padding-left: 20px; }
+.banner {
+  color: white;
+  background-color: #68c5a8;
+  height: 80vh; }
+  .banner .container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    @media only screen and (max-width: 992px) {
+      .banner .container {
+        grid-template-columns: 1fr; } }
+  .banner h1 {
+    font-family: "Muli";
+    font-size: 50px;
+    letter-spacing: 5px; }
+    @media only screen and (max-width: 992px) {
+      .banner h1 {
+        font-size: 40px; } }
+    @media only screen and (max-width: 480px) {
+      .banner h1 {
+        font-size: 35px; } }
+  .banner h3 {
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-family: "Roboto Mono";
+    margin: 60px 0px; }
+    @media only screen and (max-width: 480px) {
+      .banner h3 {
+        font-size: 18px; } }
+  .banner li {
+    color: white; }
+    .banner li a {
+      color: white; }
+    .banner li i {
+      box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0) !important; }
+      .banner li i:hover {
+        box-shadow: 0 0 0 0.1em white !important; }
+    .banner li #email:hover {
+      cursor: alias; }
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.banner-image {
+  align-items: center; }
+  @media only screen and (max-width: 992px) {
+    .banner-image {
+      display: none; } }
+
+#banner-image {
+  width: 40%;
+  height: auto; }
+
+.plugs {
+  width: 25%; }
 
 .project-container {
   background: #e6e6e6;
@@ -78,41 +131,30 @@ img {
       .project-container .project-label-container .project-label:hover {
         cursor: pointer; }
 
-.banner {
-  color: white;
-  background-color: #68c5a8;
-  height: 80vh; }
-  .banner .container {
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-    @media only screen and (max-width: 992px) {
-      .banner .container {
-        grid-template-columns: 1fr; } }
-  .banner h1 {
-    font-family: "Muli";
-    font-size: 50px;
-    letter-spacing: 5px; }
-    @media only screen and (max-width: 992px) {
-      .banner h1 {
-        font-size: 40px; } }
-    @media only screen and (max-width: 480px) {
-      .banner h1 {
-        font-size: 35px; } }
-  .banner h3 {
-    letter-spacing: 1.5px;
-    font-size: 20px;
-    font-family: "Roboto Mono"; }
-  .banner li {
-    color: white; }
-    .banner li a {
-      color: white; }
-    .banner li i {
-      box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0) !important; }
-      .banner li i:hover {
-        box-shadow: 0 0 0 0.1em white !important; }
-    .banner li #email:hover {
-      cursor: alias; }
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; }
+  @media only screen and (max-width: 992px) {
+    .projects {
+      grid-template-columns: 1fr; } }
+
+.content-container h4 {
+  display: inline-block;
+  color: black;
+  margin: 20px 0px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #97dfc9; }
+
+#aboutme > h2 {
+  font-family: "Roboto Mono";
+  display: inline-block;
+  margin: 40px 0px 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #97dfc9; }
+
+#aboutme > h2:nth-child(5) {
+  margin-top: 0px; }
 
 /* Underline From Center */
 .hvr-underline-from-center {
@@ -147,25 +189,6 @@ img {
   left: 0;
   right: 0; }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px; }
-  @media only screen and (max-width: 992px) {
-    .projects {
-      grid-template-columns: 1fr; } }
-
-.content-container h4 {
-  display: inline-block;
-  color: black;
-  margin: 20px 0px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #97dfc9; }
-
-hr {
-  margin: 40px 0px 0px;
-  border: 1px solid #68c5a8; }
-
 #aboutme ul {
   grid-template-columns: repeat(3, 1fr); }
   @media only screen and (max-width: 992px) {
@@ -176,28 +199,18 @@ hr {
   font-size: 18px;
   line-height: 2; }
 
-#aboutme > h2 {
-  font-family: "Roboto Mono";
+.heading-container {
   display: inline-block;
-  margin: 40px 0px 20px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #97dfc9; }
-
-#aboutme > h2:nth-child(5) {
-  margin-top: 0px; }
-
-.button {
-  margin-top: 40px;
-  display: inline-block;
-  border: 1px solid #f28098;
-  padding: 10px;
-  background-color: #f28098;
-  color: white;
-  font-family: "Roboto Mono"; }
-
-.subhr {
-  margin: 10px 0px 0px;
-  width: 100%; }
+  margin: 40px 0px; }
+  .heading-container div {
+    display: inline-block; }
+  .heading-container h2 {
+    margin: 0px;
+    vertical-align: top;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px; }
 
 .heading-icon {
   height: 40px;
@@ -213,6 +226,15 @@ hr {
 .heading-icon3 {
   background: url("/images/code.svg"); }
 
+.button {
+  margin-top: 40px;
+  display: inline-block;
+  border: 1px solid #f28098;
+  padding: 10px;
+  background-color: #f28098;
+  color: white;
+  font-family: "Roboto Mono"; }
+
 .footer {
   margin: 20px 0px; }
 
@@ -221,26 +243,3 @@ hr {
 
 .swal-icon--success__ring {
   border-color: #68c5a8; }
-
-.plugs {
-  width: 25%; }
-
-.banner {
-  position: relative; }
-  .banner h3 {
-    margin: 60px 0px; }
-
-.banner-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.banner-image {
-  align-items: center; }
-  @media only screen and (max-width: 992px) {
-    .banner-image {
-      display: none; } }
-
-#banner-image {
-  width: 40%;
-  height: auto; }

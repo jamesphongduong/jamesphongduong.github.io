@@ -27,7 +27,7 @@ const Banner = () => {
   return (
     <div className='banner'>
       <Container>
-        <div className='banner-container one'>
+        <div className='banner-container'>
           <h1> JAMES DUONG. </h1>
           <h3> web developer </h3>
           <ul className='plugs'>
