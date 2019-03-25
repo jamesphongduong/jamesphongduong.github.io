@@ -22,7 +22,7 @@ const MePage = () => {
       />
       <h2>Front-end Development</h2>
       <ul>
-        <Card src='/images/react-native.svg' text='React' />
+        <Card src='/images/react-native.svg' text='ReactJs' />
         <Card src='/images/html5.svg' text='HTML5' />
         <Card src='/images/css.svg' text='CSS' />
         <Card src='/images/javascript.svg' text='JavaScript' />

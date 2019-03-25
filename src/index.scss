@@ -12,6 +12,10 @@ $header: 'Muli';
 $sub-heading: 'Roboto Mono';
 $p-text: 'STIXIntegralsUpSm';
 
+//screen size
+$md: 992px;
+$sd: 480px;
+
 //mixins
 @mixin subheading_underline {
   padding-bottom: 10px;
@@ -122,14 +126,26 @@ img {
   height: 80vh;
   .container {
     height: 100%;
-    // border: 1px solid white;
     display: grid;
+    // align-items: center;
+    // text-align: center;
     grid-template-columns: repeat(2, 1fr);
+    @media only screen and (max-width: $md) {
+      grid-template-columns: 1fr;
+    }
   }
   h1 {
     font-family: $header;
     font-size: 50px;
+    // font-size: 3.5rem;
+    // font-size
     letter-spacing: 5px;
+    @media only screen and (max-width: $md) {
+      font-size: 40px;
+    }
+    @media only screen and (max-width: $sd) {
+      font-size: 35px;
+    }
   }
   h3 {
     letter-spacing: 1.5px;
@@ -194,6 +210,9 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  @media only screen and (max-width: $md) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .content-container h4 {
@@ -211,6 +230,9 @@ hr {
 #aboutme {
   ul {
     grid-template-columns: repeat(3, 1fr);
+    @media only screen and (max-width: $md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   p {
     font-size: 18px;
@@ -288,12 +310,20 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // align-items: center;
+  // justify-content: space-around;
+  &.one {
+    // align-items: center;
+    // border: 1px solid yellow;
+    // align-items:
+  }
 }
-.hero-image {
+.banner-image {
   align-items: center;
+  @media only screen and (max-width: $md) {
+    display: none;
+  }
 }
-#hero-image {
+#banner-image {
   width: 40%;
   height: auto;
 }

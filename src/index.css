@@ -86,10 +86,19 @@ img {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
+    @media only screen and (max-width: 992px) {
+      .banner .container {
+        grid-template-columns: 1fr; } }
   .banner h1 {
     font-family: "Muli";
     font-size: 50px;
     letter-spacing: 5px; }
+    @media only screen and (max-width: 992px) {
+      .banner h1 {
+        font-size: 40px; } }
+    @media only screen and (max-width: 480px) {
+      .banner h1 {
+        font-size: 35px; } }
   .banner h3 {
     letter-spacing: 1.5px;
     font-size: 20px;
@@ -142,6 +151,9 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px; }
+  @media only screen and (max-width: 992px) {
+    .projects {
+      grid-template-columns: 1fr; } }
 
 .content-container h4 {
   display: inline-block;
@@ -156,6 +168,9 @@ hr {
 
 #aboutme ul {
   grid-template-columns: repeat(3, 1fr); }
+  @media only screen and (max-width: 992px) {
+    #aboutme ul {
+      grid-template-columns: repeat(2, 1fr); } }
 
 #aboutme p {
   font-size: 18px;
@@ -220,9 +235,12 @@ hr {
   flex-direction: column;
   justify-content: center; }
 
-.hero-image {
+.banner-image {
   align-items: center; }
+  @media only screen and (max-width: 992px) {
+    .banner-image {
+      display: none; } }
 
-#hero-image {
+#banner-image {
   width: 40%;
   height: auto; }

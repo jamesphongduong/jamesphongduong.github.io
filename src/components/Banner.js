@@ -27,7 +27,7 @@ const Banner = () => {
   return (
     <div className='banner'>
       <Container>
-        <div className='banner-container'>
+        <div className='banner-container one'>
           <h1> JAMES DUONG. </h1>
           <h3> web developer </h3>
           <ul className='plugs'>
@@ -53,8 +53,8 @@ const Banner = () => {
             </li>
           </ul>
         </div>
-        <div className='banner-container hero-image'>
-          <img id='hero-image' src='/images/computer.svg' />
+        <div className='banner-container banner-image'>
+          <img id='banner-image' src='/images/computer.svg' />
         </div>
       </Container>
     </div>
