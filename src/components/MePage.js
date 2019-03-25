@@ -15,11 +15,7 @@ const MePage = () => {
         MongoDB, Express, React and NodeJs.
       </p>
 
-      <Heading
-        // src='/images/code.svg'
-        title='Tech I speak'
-        headingIcon='heading-icon3'
-      />
+      <Heading title='Tech I speak' headingIcon='heading-icon3' />
       <h2>Front-end Development</h2>
       <ul>
         <Card src='/images/react-native.svg' text='ReactJs' />

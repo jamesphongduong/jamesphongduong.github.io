@@ -2,6 +2,7 @@ import React from 'react';
 import { Icon } from 'semantic-ui-react';
 import swal from 'sweetalert';
 import { Container } from 'semantic-ui-react';
+import $ from 'jquery';
 
 // onload as we have to wait for the dom to be created first
 window.onload = () => {
@@ -21,6 +22,11 @@ window.onload = () => {
       timer: 2000
     });
   }
+
+  // remove large class to change size icon of social media
+  if ($(window).width() < 992) {
+    $('.large').removeClass('large');
+  }
 };
 
 const Banner = () => {
@@ -32,11 +38,7 @@ const Banner = () => {
           <h3> web developer </h3>
           <ul className='plugs'>
             <li>
-              <a
-                href='https://github.com/jamesphongduong'
-                target='_blank'
-                className='test'
-              >
+              <a href='https://github.com/jamesphongduong' target='_blank'>
                 <Icon size='large' bordered name='github alternate' />
               </a>
             </li>
