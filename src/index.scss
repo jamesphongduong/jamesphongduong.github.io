@@ -120,10 +120,12 @@ img {
   color: $white;
   background-color: $green;
   height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  .container {
+    height: 100%;
+    // border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   h1 {
     font-family: $header;
     font-family: 'sans-serif';
@@ -277,7 +279,22 @@ hr {
 }
 
 .banner {
+  position: relative;
   h3 {
     margin: 60px 0px;
   }
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+}
+.hero-image {
+  align-items: center;
+}
+#hero-image {
+  width: 40%;
+  height: auto;
 }

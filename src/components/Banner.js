@@ -27,30 +27,35 @@ const Banner = () => {
   return (
     <div className='banner'>
       <Container>
-        <h1> JAMES DUONG. </h1>
-        <h3> web developer </h3>
-        <ul className='plugs'>
-          <li>
-            <a
-              href='https://github.com/jamesphongduong'
-              target='_blank'
-              className='test'
-            >
-              <Icon size='large' bordered name='github alternate' />
-            </a>
-          </li>
-          <li>
-            <a
-              href='https://www.linkedin.com/in/james-phong-duong-9168a89a/'
-              target='_blank'
-            >
-              <Icon size='large' bordered name='linkedin' />
-            </a>
-          </li>
-          <li>
-            <Icon size='large' bordered name='mail' id='email' />
-          </li>
-        </ul>
+        <div className='banner-container'>
+          <h1> JAMES DUONG. </h1>
+          <h3> web developer </h3>
+          <ul className='plugs'>
+            <li>
+              <a
+                href='https://github.com/jamesphongduong'
+                target='_blank'
+                className='test'
+              >
+                <Icon size='large' bordered name='github alternate' />
+              </a>
+            </li>
+            <li>
+              <a
+                href='https://www.linkedin.com/in/james-phong-duong-9168a89a/'
+                target='_blank'
+              >
+                <Icon size='large' bordered name='linkedin' />
+              </a>
+            </li>
+            <li>
+              <Icon size='large' bordered name='mail' id='email' />
+            </li>
+          </ul>
+        </div>
+        <div className='banner-container hero-image'>
+          <img id='hero-image' src='/images/computer.svg' />
+        </div>
       </Container>
     </div>
   );

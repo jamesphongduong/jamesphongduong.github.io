@@ -81,11 +81,11 @@ img {
 .banner {
   color: white;
   background-color: #68c5a8;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center; }
+  height: 80vh; }
+  .banner .container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
   .banner h1 {
     font-family: "Roboto Mono";
     font-family: 'sans-serif';
@@ -211,5 +211,19 @@ hr {
 .plugs {
   width: 25%; }
 
-.banner h3 {
-  margin: 60px 0px; }
+.banner {
+  position: relative; }
+  .banner h3 {
+    margin: 60px 0px; }
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.hero-image {
+  align-items: center; }
+
+#hero-image {
+  width: 40%;
+  height: auto; }
