@@ -2,7 +2,7 @@
   "name": "portfolio_react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jamesphongduong.github.io/portfolio_react/",
+  "homepage": "https://jamesphongduong.github.io/portfolio/",
   "dependencies": {
     "@iconfu/svg-inject": "^1.2.2",
     "gh-pages": "^2.0.1",
@@ -17,7 +17,7 @@
   "scripts": {
     "start": "npm run compile:sass & react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "fish -d build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "compile:sass": "node-sass src/index.scss  src/index.css -w",
