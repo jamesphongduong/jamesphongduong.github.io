@@ -56,7 +56,10 @@ const Banner = () => {
           </ul>
         </div>
         <div className='banner-container banner-image'>
-          <img id='banner-image' src='../../images/computer.svg' />
+          <img
+            id='banner-image'
+            src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/computer.svg'
+          />
         </div>
       </Container>
     </div>
