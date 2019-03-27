@@ -275,15 +275,15 @@ hr {
 }
 
 .heading-icon1 {
-  background: url('./images/idea.svg');
+  background: url('/images/idea.svg');
 }
 
 .heading-icon2 {
-  background: url('./images/nerd.svg');
+  background: url('/images/nerd.svg');
 }
 
 .heading-icon3 {
-  background: url('./images/code.svg');
+  background: url('/images/code.svg');
 }
 
 .button {
