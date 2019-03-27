@@ -12,14 +12,14 @@ const ProjectPage = () => {
         <Project
           name='oneUp'
           src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/oneUp.png'
-          content={[
+          content={
             <p>
               Social Media web app based on challenges, think "ALS Ice Bucket
               Challenge." MVP built where administrators can create challenges
               and users can view and complete challenges by uploading a video of
               completing the relevant challenge.
             </p>
-          ]}
+          }
           content2='MERN Stack (MongoDB, Express, React & NodeJs), AWS S3 (Storage) & Heroku (Deployment)'
           url='http://1up-app.s3-website-ap-southeast-2.amazonaws.com'
         />
@@ -27,12 +27,12 @@ const ProjectPage = () => {
         <Project
           name='CasualMeals'
           src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/chef-flat.svg'
-          content={[
+          content={
             <p>
               Two sided marketplace where chefs can list and sell meals, and
               customers able to view and purchase meals.
             </p>
-          ]}
+          }
           content2='Ruby on Rails, Postgresql, AWS S3 (Storage), Stripe (Payment) & Heroku (Deployment)'
           url='https://casualmeals.herokuapp.com/'
         />

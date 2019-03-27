@@ -68,10 +68,22 @@ const MePage = () => {
       </ul>
       <h2>Other</h2>
       <ul>
-        <Card src='/Images/heroku.svg' text='Heroku' />
-        <Card src='/Images/git.svg' text='Git' />
-        <Card src='/Images/s3.svg' text='Amazon Storage Service' />
-        <Card src='/Images/wordpress.svg' text='WordPress' />
+        <Card
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/heroku.svg'
+          text='Heroku'
+        />
+        <Card
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/git.svg'
+          text='Git'
+        />
+        <Card
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/s3.svg'
+          text='Amazon Storage Service'
+        />
+        <Card
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/wordpress.svg'
+          text='WordPress'
+        />
       </ul>
     </div>
   );
