@@ -1,39 +1,47 @@
 * {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 h1,
 h4 {
-  font-family: "Roboto Mono";
-  color: white; }
+  font-family: 'Roboto Mono';
+  color: white;
+}
 
 h2,
 li,
 .button {
-  font-family: "Roboto Mono";
-  color: black; }
+  font-family: 'Roboto Mono';
+  color: black;
+}
 
 ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  padding-left: 0; }
+  padding-left: 0;
+}
 
 li {
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
 img {
   width: 50px;
   height: 50px;
-  margin-right: 20px; }
+  margin-right: 20px;
+}
 
 hr {
   margin: 40px 0px 0px;
-  border: 1px solid #68c5a8; }
+  border: 1px solid #68c5a8;
+}
 
 .subhr {
   margin: 10px 0px 0px;
-  width: 100%; }
+  width: 100%;
+}
 
 .navbar-ul {
   height: 60px;
@@ -41,121 +49,158 @@ hr {
   display: flex;
   list-style: none;
   align-items: center;
-  justify-content: flex-end; }
-  .navbar-ul li {
-    margin-left: 20%;
-    padding: 20px 0px; }
-    .navbar-ul li a {
-      color: black; }
+  justify-content: flex-end;
+}
+.navbar-ul li {
+  margin-left: 20%;
+  padding: 20px 0px;
+}
+.navbar-ul li a {
+  color: black;
+}
 
 .banner {
   color: white;
   background-color: #68c5a8;
-  height: 80vh; }
+  height: 80vh;
+}
+.banner .container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 992px) {
   .banner .container {
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-    @media only screen and (max-width: 992px) {
-      .banner .container {
-        grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr;
+  }
+}
+.banner h1 {
+  font-family: 'Muli';
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+@media only screen and (max-width: 992px) {
   .banner h1 {
-    font-family: "Muli";
-    font-size: 50px;
-    letter-spacing: 5px; }
-    @media only screen and (max-width: 992px) {
-      .banner h1 {
-        font-size: 40px; } }
-    @media only screen and (max-width: 480px) {
-      .banner h1 {
-        font-size: 35px; } }
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .banner h1 {
+    font-size: 35px;
+  }
+}
+.banner h3 {
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  font-family: 'Roboto Mono';
+  margin: 60px 0px;
+}
+@media only screen and (max-width: 480px) {
   .banner h3 {
-    letter-spacing: 1.5px;
-    font-size: 20px;
-    font-family: "Roboto Mono";
-    margin: 60px 0px; }
-    @media only screen and (max-width: 480px) {
-      .banner h3 {
-        font-size: 18px;
-        margin: 40px 0px; } }
-  .banner li {
-    color: white; }
-    .banner li a {
-      color: white; }
-    .banner li i {
-      box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0) !important; }
-      .banner li i:hover {
-        box-shadow: 0 0 0 0.1em white !important; }
-    .banner li #email:hover {
-      cursor: alias; }
+    font-size: 18px;
+    margin: 40px 0px;
+  }
+}
+.banner li {
+  color: white;
+}
+.banner li a {
+  color: white;
+}
+.banner li i {
+  box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0) !important;
+}
+.banner li i:hover {
+  box-shadow: 0 0 0 0.1em white !important;
+}
+.banner li #email:hover {
+  cursor: alias;
+}
 
 .banner-container {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .banner-image {
-  align-items: center; }
-  @media only screen and (max-width: 992px) {
-    .banner-image {
-      display: none; } }
+  align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .banner-image {
+    display: none;
+  }
+}
 
 #banner-image {
   width: 40%;
-  height: auto; }
+  height: auto;
+}
 
 .plugs {
-  width: 25%; }
+  width: 25%;
+}
 
 .project-container {
   background: #e6e6e6;
   background-size: cover;
-  height: 200px; }
-  .project-container .project-label-container {
-    font-family: "Roboto Mono" !important;
-    position: relative;
-    height: 100%; }
-    .project-container .project-label-container img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 40px;
-      height: 40px; }
-    .project-container .project-label-container .project-label {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 10px;
-      background-color: #f28098;
-      padding: 10px; }
-      .project-container .project-label-container .project-label:hover {
-        cursor: pointer; }
+  height: 200px;
+}
+.project-container .project-label-container {
+  font-family: 'Roboto Mono' !important;
+  position: relative;
+  height: 100%;
+}
+.project-container .project-label-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+}
+.project-container .project-label-container .project-label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  background-color: #f28098;
+  padding: 10px;
+}
+.project-container .project-label-container .project-label:hover {
+  cursor: pointer;
+}
 
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px; }
-  @media only screen and (max-width: 992px) {
-    .projects {
-      grid-template-columns: 1fr; } }
+  grid-gap: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
 
 .content-container h4 {
   display: inline-block;
   color: black;
   margin: 20px 0px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #97dfc9; }
+  border-bottom: 2px solid #97dfc9;
+}
 
 #aboutme > h2 {
-  font-family: "Roboto Mono";
+  font-family: 'Roboto Mono';
   display: inline-block;
   margin: 40px 0px 20px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #97dfc9; }
+  border-bottom: 2px solid #97dfc9;
+}
 
 #aboutme > h2:nth-child(5) {
-  margin-top: 0px; }
+  margin-top: 0px;
+}
 
 /* Underline From Center */
 .hvr-underline-from-center {
@@ -165,7 +210,8 @@ hr {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .hvr-underline-from-center:before {
   content: '';
@@ -182,50 +228,63 @@ hr {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out; }
+  transition-timing-function: ease-out;
+}
 
 .hvr-underline-from-center:hover:before,
 .hvr-underline-from-center:focus:before,
 .hvr-underline-from-center:active:before {
   left: 0;
-  right: 0; }
+  right: 0;
+}
 
 #aboutme ul {
-  grid-template-columns: repeat(3, 1fr); }
-  @media only screen and (max-width: 992px) {
-    #aboutme ul {
-      grid-template-columns: repeat(2, 1fr); } }
+  grid-template-columns: repeat(3, 1fr);
+}
+@media only screen and (max-width: 992px) {
+  #aboutme ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 #aboutme p {
   font-size: 18px;
-  line-height: 2; }
+  line-height: 2;
+}
 
 .heading-container {
   display: inline-block;
-  margin: 40px 0px; }
-  .heading-container div {
-    display: inline-block; }
-  .heading-container h2 {
-    margin: 0px;
-    vertical-align: top;
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    padding-left: 20px; }
+  margin: 40px 0px;
+}
+.heading-container div {
+  display: inline-block;
+}
+.heading-container h2 {
+  margin: 0px;
+  vertical-align: top;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+}
 
 .heading-icon {
   height: 40px;
   width: 40px;
-  background-size: contain !important; }
+  background-size: contain !important;
+}
 
 .heading-icon1 {
-  background: url("/images/idea.svg"); }
+  background: url('./images/idea.svg');
+}
 
 .heading-icon2 {
-  background: url("/images/nerd.svg"); }
+  background: url('./images/nerd.svg');
+}
 
 .heading-icon3 {
-  background: url("/images/code.svg"); }
+  background: url('./images/code.svg');
+}
 
 .button {
   margin-top: 40px;
@@ -234,13 +293,17 @@ hr {
   padding: 10px;
   background-color: #f28098;
   color: white;
-  font-family: "Roboto Mono"; }
+  font-family: 'Roboto Mono';
+}
 
 .footer {
-  margin: 20px 0px; }
+  margin: 20px 0px;
+}
 
 .swal-icon--success__line {
-  background-color: #68c5a8; }
+  background-color: #68c5a8;
+}
 
 .swal-icon--success__ring {
-  border-color: #68c5a8; }
+  border-color: #68c5a8;
+}

@@ -56,7 +56,7 @@ const Banner = () => {
           </ul>
         </div>
         <div className='banner-container banner-image'>
-          <img id='banner-image' src='/images/computer.svg' />
+          <img id='banner-image' src='./images/computer.svg' />
         </div>
       </Container>
     </div>
