@@ -18,20 +18,53 @@ const MePage = () => {
       <Heading title='Tech I speak' headingIcon='heading-icon3' />
       <h2>Front-end Development</h2>
       <ul>
-        <Card src='/Images/react-native.svg' text='ReactJs' />
-        <Card src='/Images/html5.svg' text='HTML5' />
-        <Card src='/Images/css.svg' text='CSS' />
-        <Card src='/Images/javascript.svg' text='JavaScript' />
-        <Card src='/Images/jquery.svg' text='jQuery' />
+        <Card
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/react-native.svg'
+          text='ReactJs'
+        />
+        <Card
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/html5.svg'
+          text='HTML5'
+        />
+        <Card
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/css.svg'
+          text='CSS'
+        />
+        <Card
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/javascript.svg'
+          text='JavaScript'
+        />
+        <Card
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/jquery.svg'
+          text='jQuery'
+        />
       </ul>
       <h2>Back-end Development</h2>
       <ul>
-        <Card src='/Images/ruby.svg' text='Ruby / Ruby on Rails' />
-        <Card src='/Images/nodejs.svg' text='NodeJs' />
-        <Card src='/Images/express.svg' text='ExpressJs' />
-        <Card src='/Images/mongodb.svg' text='MongoDB' />
-        <Card src='/Images/postgresql.svg' text='Postgresql' />
-        <Card src='/Images/php.svg' text='PHP' />
+        <Card
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/ruby.svg'
+          text='Ruby / Ruby on Rails'
+        />
+        <Card
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/nodejs.svg'
+          text='NodeJs'
+        />
+        <Card
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/express.svg'
+          text='ExpressJs'
+        />
+        <Card
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/mongodb.svg'
+          text='MongoDB'
+        />
+        <Card
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/postgresql.svg'
+          text='Postgresql'
+        />
+        <Card
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/php.svg'
+          text='PHP'
+        />
       </ul>
       <h2>Other</h2>
       <ul>

@@ -11,7 +11,7 @@ const ProjectPage = () => {
         {/* project 1 */}
         <Project
           name='oneUp'
-          src='/Images/oneUp.png'
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/oneUp.png'
           content={[
             <p>
               Social Media web app based on challenges, think "ALS Ice Bucket
@@ -26,7 +26,7 @@ const ProjectPage = () => {
         {/* project 2 */}
         <Project
           name='CasualMeals'
-          src='/Images/chef-flat.svg'
+          src='https://s3-ap-southeast-2.amazonaws.com/portfolio-react-images/chef-flat.svg'
           content={[
             <p>
               Two sided marketplace where chefs can list and sell meals, and
