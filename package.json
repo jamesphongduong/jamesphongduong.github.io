@@ -17,7 +17,7 @@
   "scripts": {
     "start": "npm run compile:sass & react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "fish -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "compile:sass": "node-sass src/index.scss  src/index.css -w",
