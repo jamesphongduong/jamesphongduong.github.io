@@ -19,26 +19,26 @@ const MePage = () => {
       <h2>Front-end Development</h2>
       <ul>
         <Card src='/Images/react-native.svg' text='ReactJs' />
-        <Card src='/images/html5.svg' text='HTML5' />
-        <Card src='/images/css.svg' text='CSS' />
-        <Card src='/images/javascript.svg' text='JavaScript' />
-        <Card src='/images/jquery.svg' text='jQuery' />
+        <Card src='/Images/html5.svg' text='HTML5' />
+        <Card src='/Images/css.svg' text='CSS' />
+        <Card src='/Images/javascript.svg' text='JavaScript' />
+        <Card src='/Images/jquery.svg' text='jQuery' />
       </ul>
       <h2>Back-end Development</h2>
       <ul>
-        <Card src='/images/ruby.svg' text='Ruby / Ruby on Rails' />
-        <Card src='/images/nodejs.svg' text='NodeJs' />
-        <Card src='/images/express.svg' text='ExpressJs' />
-        <Card src='/images/mongodb.svg' text='MongoDB' />
-        <Card src='/images/postgresql.svg' text='Postgresql' />
-        <Card src='/images/php.svg' text='PHP' />
+        <Card src='/Images/ruby.svg' text='Ruby / Ruby on Rails' />
+        <Card src='/Images/nodejs.svg' text='NodeJs' />
+        <Card src='/Images/express.svg' text='ExpressJs' />
+        <Card src='/Images/mongodb.svg' text='MongoDB' />
+        <Card src='/Images/postgresql.svg' text='Postgresql' />
+        <Card src='/Images/php.svg' text='PHP' />
       </ul>
       <h2>Other</h2>
       <ul>
-        <Card src='/images/heroku.svg' text='Heroku' />
-        <Card src='/images/git.svg' text='Git' />
-        <Card src='/images/s3.svg' text='Amazon Storage Service' />
-        <Card src='/images/wordpress.svg' text='WordPress' />
+        <Card src='/Images/heroku.svg' text='Heroku' />
+        <Card src='/Images/git.svg' text='Git' />
+        <Card src='/Images/s3.svg' text='Amazon Storage Service' />
+        <Card src='/Images/wordpress.svg' text='WordPress' />
       </ul>
     </div>
   );
